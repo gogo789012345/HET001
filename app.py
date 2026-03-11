@@ -35,7 +35,7 @@ def init_connection():
     return gspread.authorize(credentials)
 
 # 👈 記得換返你個 Google Sheet 網址
-SHEET_URL = "https://docs.google.com/spreadsheets/d/home_expense/edit"
+SHEET_URL = "https://docs.google.com/spreadsheets/d/137HBHfJbBUjo2dlniC1hDARJcQUx0njlDVnyb-mFOdE/edit"
 
 try:
     client = init_connection()
@@ -127,4 +127,5 @@ try:
         st.info("目前系統仲未有任何紀錄。")
         
 except Exception as e:
+
     st.error(f"無法產生圖表: {e}")
