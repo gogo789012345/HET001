@@ -61,7 +61,7 @@ with st.form("expense_form", clear_on_submit=True):
         date = st.date_input("日期", datetime.now())
         payer = st.selectbox("付款人", ["大臭", "小臭"]) # 👈 可自行更改稱呼
     with col_b:
-        category = st.selectbox("類別", ["超市","街市", "食飯", "水費", "電費", "煤氣費", "上網費" , "管理費", "供樓", "日用品", "零食", "交通", "醫療", "其他"])
+        category = st.selectbox("類別", ["超市","街市", "食飯", "水費", "電費", "煤氣費", "上網費" , "管理費", "供樓", "差餉", "日用品", "零食", "交通", "醫療", "其他"])
         amount = st.number_input("金額 ($)", min_value=0.0, step=10.0)
         
     # 第二排
